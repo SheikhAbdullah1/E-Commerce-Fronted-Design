@@ -17,18 +17,19 @@
 
   <!-- Navbar Start -->
   <nav class="container-fluid p-3 bg-light">
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center" style="padding: 5px;">
 
       <!-- Logo Section -->
       <div class="logo">
-        <img alt="Brand logo" class="w-50 h-auto" src="./images/Navbar/Brand/logo-colored.png" />
+        <img alt="Brand logo" class="h-auto" style="margin-left: 80px; width: 150px;"
+          src="./images/Navbar/Brand/logo-colored.png" />
       </div>
 
       <!-- Search Bar Section -->
       <div class="d-flex align-items-center">
         <div class="input-group" style="max-width: 800px; border: 2px solid rgb(91, 131, 144); border-radius: 8px;">
-          <input type="text" class="form-control" placeholder="Search" />
-          <select class="form-select">
+          <input type="text" style="width: 300px;" class="form-control" placeholder="Search" />
+          <select class="form-select" style="width: 150px;">
             <option>All category</option>
           </select>
           <button class="btn btn-primary">Search</button>
@@ -36,14 +37,14 @@
       </div>
 
       <!-- Navigation Icons Section -->
-      <div class="d-flex align-items-center">
-        <div class="me-3">
+      <div class="d-flex align-items-center" style="margin-right: 80px;">
+        <div>
           <img src="./images/Navbar/Brand/Profile.png" alt="Profile" class="navbar-icon" />
         </div>
-        <div class="me-3">
+        <div>
           <img src="./images/Navbar/Brand/Message.png" alt="Message" class="navbar-icon" />
         </div>
-        <div class="me-3">
+        <div>
           <img src="./images/Navbar/Brand/Orders.png" alt="Orders" class="navbar-icon" />
         </div>
         <div>
@@ -54,6 +55,9 @@
 
     <!-- Navbar Menu Section -->
     <ul class="nav d-flex justify-content-center" style="border-top: 1px solid rgb(169, 167, 167); padding-top: 5px;">
+      <select class="form-select mx-2" style="width: 150px; border: none;">
+        <option>All Category</option>
+      </select>
       <li class="nav-item mx-3">
         <a class="nav-link" href="#">Hot Offer</a>
       </li>
@@ -86,7 +90,74 @@
   </nav>
   <!-- Navbar End -->
 
-  <!-- Section -->
+  <!-- Hero Section Start -->
+  <section class="hero bg-light pt-3">
+    <div class="container">
+      <div class="row bg-white" style="border-radius: 5px; padding: 10px 15px; ">
+
+        <!-- Left Sidebar: Categories -->
+        <div class="col-md-3">
+          <ul class="list-group">
+            <li class="list-group-item active" style="border: none; background: #55BDC3;">Automobiles</li>
+            <li class="list-group-item" style="border: none;">Clothes and wear</li>
+            <li class="list-group-item" style="border: none;">Home Interior</li>
+            <li class="list-group-item" style="border: none;">Computer and tech</li>
+            <li class="list-group-item" style="border: none;">Tools, equipments</li>
+            <li class="list-group-item" style="border: none;">Sports and outdoors</li>
+            <li class="list-group-item" style="border: none;">Animal and pets</li>
+            <li class="list-group-item" style="border: none;">Machinery tools</li>
+            <li class="list-group-item" style="border: none;">More Category...</li>
+          </ul>
+        </div>
+
+        <!-- Center: Banner Image -->
+        <div class="col-md-5">
+          <img src="./images/Banner-board-800x420 2.png" alt="Banner Image">
+          
+          <div style="position: absolute; top: 15rem; left: 31rem;">
+            <p style="font-size: 22px; font-weight: 300;">Latest trending</p>
+            <p style="font-size: 28px; margin-top: -25px; font-weight: bold;">Electronic items</p>
+            <a href="#" class="btn bg-light">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Right Sidebar: Cards and User Info -->
+        <div class="col-md-3" style="position: absolute; right: 35px;">
+          <!-- User Info Card -->
+          <div class="card mb-3" style="width: 18rem; background: #E3F0FF; height: 10rem;">
+            <div class="card-body">
+
+              <div class="d-flex">
+                <img src="./images/Avatar.png" class="card-img-top" style="width: 50px; height: auto;"
+                  alt="user_avatar">
+                <p class="card-title ps-3" style="font-size: 16px;">Hi, user <br> let's get started</p>
+              </div>
+              <div class="p-1">
+                <a href="#" class="btn btn-primary w-100 mb-1">Join now</a>
+                <a href="#" class="btn text-primary bg-white w-100">Log in</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discount Card -->
+          <div class="card mb-3" style="width: 18rem;">
+            <div class="card-body text-white" style="background: #F38332;">
+              <h5 class="card-subtitle mb-2">Get US $10 off with a new supplier</h5>
+            </div>
+          </div>
+
+          <!-- Send Quotes Card -->
+          <div class="card" style="width: 18rem;">
+            <div class="card-body text-white" style="background: #55BDC3;">
+              <h6 class="card-subtitle mb-2">Send quotes with supplier preferences</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End-->
 
 
   <!-- External file Links -->
