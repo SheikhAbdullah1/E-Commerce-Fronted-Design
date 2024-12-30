@@ -22,3 +22,90 @@ body {
   }
   
 /* Navbar Css */
+
+/* Section Css */
+.fs_16 {
+  font-size: 16px;
+}
+
+.hero {
+  margin: 2rem 7rem;
+}
+.card-body {
+  text-align: center;
+}
+.card-link {
+  background: #FFE3E3;
+  color: #EB001B;
+  border-radius: 40%;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* Section Css */
+
+ /* General Styling */
+ .product-card {
+  display: inline-block;
+  width: calc(20% - 1rem);
+  /* margin: 1rem; */
+  /* box-sizing: border-box; */
+  border: 1px solid #606060;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* .product-card:hover {
+  transform: translateY(-5px);
+} */
+
+.card-body {
+  padding: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-link {
+  display: inline-block;
+  background: #FFE3E3;
+  color: #EB001B;
+  border-radius: 40%;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(33.33% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
+}
+/* General Styling */
