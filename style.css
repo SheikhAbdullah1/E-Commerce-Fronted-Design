@@ -109,3 +109,24 @@ body {
   }
 }
 /* General Styling */
+
+/* .bg_img {
+  background-image: linear-gradient(#2C7CF1, #00D1FF), url("./images/image 102.png");
+  background-size: cover; Ensures the image covers the entire container
+  background-position: center; Centers the image
+  height: 100vh; Adjusts the height to fill the viewport
+  width: 100%;
+} */
+
+.bg_img {
+  background-image: linear-gradient(#2C7CF1, #00D1FF), url("./images/image 102.png");
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  height: 100vh; /* Adjusts the height to fill the viewport */
+  width: 100%; /* Makes sure the width of the container spans the full width of the viewport */
+  display: flex; /* Allows alignment of inner content */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  position: relative; /* Makes sure any absolute positioning inside works properly */
+}
