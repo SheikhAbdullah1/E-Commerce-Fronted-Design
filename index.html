@@ -17,11 +17,11 @@
 
   <!-- Navbar Start -->
   <nav class="container-fluid p-3 bg-light">
-    <div class="d-flex justify-content-between align-items-center" style="padding: 5px;">
+    <div class="d-flex justify-content-between align-items-center p-4">
 
       <!-- Logo Section -->
       <div class="logo">
-        <img alt="Brand logo" class="h-auto" style="margin-left: 80px; width: 150px;" src="./images/Icon/logo.png" />
+        <img alt="Brand logo" src="./images/Icon/logo.png" />
       </div>
 
       <!-- Search Bar Section -->
@@ -44,10 +44,14 @@
           <img src="./images/Icon/Message.png" alt="Message" class="navbar-icon" />
         </div>
         <div>
-          <img src="./images/Icon/Orders.png" alt="Orders" class="navbar-icon" />
+          <a href="./cart.html">
+            <img src="./images/Icon/Orders.png" alt="Orders" class="navbar-icon" />
+          </a>
         </div>
         <div>
-          <img src="./images/Icon/Cart.png" alt="Cart" class="navbar-icon" />
+          <a href="./cart.html">
+            <img src="./images/Icon/Cart.png" alt="Cart" class="navbar-icon" />
+          </a>
         </div>
       </div>
     </div>
@@ -56,6 +60,9 @@
     <ul class="nav d-flex justify-content-center" style="border-top: 1px solid rgb(169, 167, 167); padding-top: 5px;">
       <select class="form-select mx-2" style="width: 150px; border: none;">
         <option>All Category</option>
+        <option>Category 1</option>
+        <option>Category 2</option>
+        <option>Category 3</option>
       </select>
       <li class="nav-item mx-3">
         <a class="nav-link" href="#">Hot Offer</a>
@@ -74,9 +81,14 @@
       <div class="d-flex align-items-center">
         <select class="form-select mx-2" style="width: 150px;">
           <option>Help</option>
+          <!-- <option>+92 123456789</option> -->
+          <!-- <option>+92 123456789</option> -->
         </select>
         <select class="form-select mx-2" style="width: 150px;">
           <option>Language</option>
+          <option>English</option>
+          <option>Urdu</option>
+          <option>Arabic</option>
         </select>
         <select class="form-select mx-2" style="width: 150px;">
           <option value="us" class="flag-icon flag-icon-us"> United States</option>
@@ -98,15 +110,16 @@
         <!-- Left Sidebar: Categories -->
         <div class="col-md-3">
           <ul class="list-group">
-            <li class="list-group-item active" style="border: none; background: #55BDC3;">Automobiles</li>
-            <li class="list-group-item" style="border: none;">Clothes and wear</li>
-            <li class="list-group-item" style="border: none;">Home Interior</li>
-            <li class="list-group-item" style="border: none;">Computer and tech</li>
-            <li class="list-group-item" style="border: none;">Tools, equipments</li>
-            <li class="list-group-item" style="border: none;">Sports and outdoors</li>
-            <li class="list-group-item" style="border: none;">Animal and pets</li>
-            <li class="list-group-item" style="border: none;">Machinery tools</li>
-            <li class="list-group-item" style="border: none;">More Category...</li>
+            <li class="list-group-item active" style="border: none; background: #55BDC3;"><a
+                href="./categories.html">Automobiles</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Clothes and wear</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Home Interior</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Computer and tech</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Tools, equipments</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Sports and outdoors</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Animal and pets</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">Machinery tools</a></li>
+            <li class="list-group-item" style="border: none;"><a href="./categories.html">More Category...</a></li>
           </ul>
         </div>
 
@@ -114,9 +127,9 @@
         <div class="col-md-5">
           <img src="./images/images/banner.png" alt="Banner Image"
             style="max-width: 125%; height: 100%; border-radius: 5px;">
-          <div style="position: absolute; top: 15rem; left: 31rem;">
+          <div style="position: absolute; top: 18rem; left: 31rem;">
             <p style="font-size: 22px; font-weight: 300;">Latest trending</p>
-            <p style="font-size: 28px; margin-top: -5px; font-weight: bold;">Electronic items</p>
+            <p style="font-size: 28px; font-weight: bold;">Electronic items</p>
             <a href="#" class="btn bg-light">Learn More</a>
           </div>
         </div>
@@ -138,7 +151,6 @@
               </div>
             </div>
           </div>
-
           <!-- Discount Card -->
           <div class="card mb-3" style="width: 18rem;">
             <div class="card-body text-white" style="background: #F38332;">
@@ -158,12 +170,9 @@
     </div>
   </section>
   <!-- Hero Section End-->
-
   <!-- Main Section Start -->
-
-  <!-- Deals Section -->
-
   <section class="main">
+    <!-- Deals Section -->
     <section class="d-flex hero"
       style="margin: 2rem 7rem;border-radius: 5px;background-color: #ffff;border: 1px solid rgb(219, 217, 217);">
       <div class="card-body" style="text-align: left; width: 20rem; padding: 20px; font-weight: bold;">
@@ -184,67 +193,77 @@
       <!-- Product Cards -->
       <div class="product-card"
         style="padding: 1rem; display: inline-block; width: calc(20% - 1rem); text-align: center; border-radius: 5px; box-shadow: 0 1px 2px rgb(219, 217, 217); transition: transform 0.3s ease">
-        <!-- <div class="card-body"> -->
         <div class="image-container" style="width: 150px;">
-          <img src="./images/images/camera.png" style="width: 100%;" alt="Canon cameras">
+          <a href="./Product.html">
+            <img src="./images/images/camera.png" style="width: 100%;" alt="Canon cameras">
+          </a>
         </div>
         <div style="padding-top: 30px;">
           <p class="card-title">Canon cameras</p>
-          <a href="#" class="card-link">-25%</a>
+          <p
+            style="background-color: #FFE3E3; width: 60px; height: 50px; border-radius: 50%; padding: 10px; font-weight: bold; color: #EB001B; margin-left: 55px;">
+            -25%</p>
         </div>
         <!-- </div> -->
       </div>
-
       <div class="product-card"
         style="padding: 1rem; display: inline-block; width: calc(20% - 1rem); text-align: center; border-radius: 5px; box-shadow: 0 1px 2px rgb(219, 217, 217); transition: transform 0.3s ease;">
         <!-- <div class="card-body"> -->
         <div class="image-container" style="width: 150px;">
-          <img src="./images/images/headphone.png" alt="Headphones" style="width: 100%; padding: 3px;">
+          <a href="./Product.html">
+            <img src="./images/images/headphone.png" alt="Headphones" style="width: 100%; padding: 3px;">
+          </a>
         </div>
         <div style="padding-top: 30px;">
           <p class="card-title">Headphones</p>
-          <a href="#" class="card-link">-25%</a>
+          <p
+            style="background-color: #FFE3E3; width: 60px; height: 50px; border-radius: 50%; padding: 10px; font-weight: bold; color: #EB001B; margin-left: 55px;">
+            -25%</p>
         </div>
         <!-- </div> -->
       </div>
-
       <div class="product-card"
         style="padding: 1rem; display: inline-block; width: calc(20% - 1rem); text-align: center; border-radius: 5px; box-shadow: 0 1px 2px rgb(219, 217, 217); transition: transform 0.3s ease;">
-        <!-- <div class="card-body"> -->
         <div class="image-container" style="width: 150px;">
-          <img src="./images/images/mobile_phone.png" style="width: 100%;" alt="GoPro cameras">
+          <a href="./Product.html">
+            <img src="./images/images/mobile_phone.png" style="width: 100%;" alt="GoPro cameras">
+          </a>
         </div>
         <div style="padding-top: 30px;">
           <p class="card-title">GoPro mobile</p>
-          <a href="#" class="card-link">-40%</a>
+          <p
+            style="background-color: #FFE3E3; width: 60px; height: 50px; border-radius: 50%; padding: 10px; font-weight: bold; color: #EB001B; margin-left: 55px;">
+            -40%</p>
         </div>
-        <!-- </div> -->
       </div>
-
       <div class="product-card"
         style="padding: 1rem; display: inline-block; width: calc(20% - 1rem); text-align: center; border-radius: 5px; box-shadow: 0 1px 2px rgb(219, 217, 217); transition: transform 0.3s ease;">
-        <!-- <div class="card-body"> -->
         <div class="image-container" style="width: 150px;">
-          <img src="./images/images/laptop.png" style="width: 100%;" alt="Laptops">
+          <a href="./Product.html">
+            <img src="./images/images/laptop.png" style="width: 100%;" alt="Laptops">
+          </a>
         </div>
         <div style="padding-top: 30px;">
           <p class="card-title">Laptops</p>
-          <a href="#" class="card-link">-15%</a>
+          <p
+            style="background-color: #FFE3E3; width: 60px; height: 50px; border-radius: 50%; padding: 10px; font-weight: bold; color: #EB001B; margin-left: 55px;">
+            -15%</p>
         </div>
-        <!-- </div> -->
       </div>
 
       <div class="product-card"
         style="padding: 1rem; display: inline-block; width: calc(20% - 1rem); text-align: center; border-radius: 5px; box-shadow: 0 1px 2px rgb(219, 217, 217); transition: transform 0.3s ease;">
-        <!-- <div class="card-body"> -->
         <div class="image-container" style="width: 130px;">
-          <img src="./images/images/smart_watch.png" style="width: 100%;" alt="Smart Watches">
+          <a href="./Product.html">
+            <img src="./images/images/smart_watch.png" style="width: 100%;" alt="Smart Watches">
+          </a>
         </div>
         <div style="padding-top: 30px;">
           <p class="card-title">Smart Watches</p>
-          <a href="#" class="card-link">-25%</a>
+          <p
+            style="background-color: #FFE3E3; width: 60px; height: 50px; border-radius: 50%; padding: 10px; font-weight: bold; color: #EB001B; margin-left: 55px;">
+            -25%</p>
         </div>
-        <!-- </div> -->
       </div>
       <!-- Product Cards End -->
     </section>
@@ -261,7 +280,6 @@
           <a href="#" class="btn bg-light" style="margin: -5px;">Source now</a>
         </div>
       </div>
-      </div>
 
       <!-- Interior Product Cards -->
       <div class="product-card"
@@ -269,22 +287,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Sofa chair</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</a>
+            <p style="color: #8B96A5; font-size: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem;  background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/sofa_light_brown.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/sofa_light_brown.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey; padding-top: 20px; margin-top: 20px;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Lamp</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</a>
+            <p style="color: #8B96A5; font-size: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/lamp.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/lamp.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -293,22 +315,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Soft mattress</p>
-            <a href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</a>
+            <p style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/mattres.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/mattres.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey; padding-top: 20px; margin-top: 20px; ">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Plant pot</p>
-            <a href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/pot.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/pot.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -317,22 +343,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Coffee mixture</p>
-            <a href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/coffee_mixture.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/coffee_mixture.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey; padding-top: 20px; margin-top: 30px;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Soft chairs</p>
-            <a href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/soft_chair_brown.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/soft_chair_brown.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -341,22 +371,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Juicer Blender</p>
-            <a href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/juicer_blender.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/juicer_blender.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey; padding-top: 20px; margin-top: 20px;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Clay Pot</p>
-            <a href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-weight: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/pot.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/pot.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -383,22 +417,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Smart Watch</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem;  background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/smart_watch.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/smart_watch.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;  padding-top: 20px; margin-top: 20px;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Stylish Headphones</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 35</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 35</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/headpone_stylish.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/headpone_stylish.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -407,22 +445,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Cameras</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 110px; position: relative;  left: 5rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/camera.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/camera.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060; padding-top: 20px; margin-top: 20px;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Laptop & Pc</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 110px; position: relative;  left: 5rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/laptop.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/laptop.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -431,22 +473,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Headphones</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 10</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 10</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/headphone.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/headphone.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;  padding-top: 20px; margin-top: 20px;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Tablets</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 29</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 29</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/touch_tablets.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/touch_tablets.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -455,22 +501,26 @@
         <div class="card-body" style="box-shadow: 2px 2px 2px grey;">
           <div style="text-align: left; color: #606060;">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">SmartPhones</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 120</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 120</p>
           </div>
           <div
             style="width: 80px; position: relative; left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/smart_phones.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/smart_phones.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
 
         <div class="card-body" style="box-shadow: 2px 2px 2px grey; padding-top: 20px; margin-top: 20px;">
           <div style="text-align: left; color: #606060; ">
             <p class="card-title fs_16" style="font-weight: bold; color: black;">Clay Pot</p>
-            <a href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</a>
+            <p href="#" style="color: #8B96A5; font-size: 13px;">From <br> USD 19</p>
           </div>
           <div
             style="width: 80px; position: relative;  left: 7rem; bottom: 1rem; background: #E3F0FF; box-shadow: 2px 2px 2px grey;">
-            <img src="./images/images/pot.png" class="card-img-bottom" alt="Canon cameras">
+            <a href="./categories.html">
+              <img src="./images/images/pot.png" class="card-img-bottom" alt="Canon cameras">
+            </a>
           </div>
         </div>
       </div>
@@ -806,7 +856,6 @@
       </div>
     </div>
   </div>
-
   <!-- Footer  Start-->
   <footer>
     <div class="d-flex" style="margin: 2rem 7rem;">
